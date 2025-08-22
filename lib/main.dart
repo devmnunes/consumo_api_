@@ -1,11 +1,13 @@
-import 'dart:io';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-void main () {
- var url = 'https://jsonplaceholder.typicode.com/todos/';
+void main  () {
+  runApp(MyApp());
+}
 
- final client = HttpClient();
- //REQUEST
-
- //RESPONSE
-
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp();
+  }  
 }
