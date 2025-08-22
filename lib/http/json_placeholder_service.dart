@@ -5,7 +5,9 @@ import 'package:dio/dio.dart';
 
 class JsonPlaceholderService {
 final url = 'https://jsonplaceholder.typicode.com/todos/';
-final dio = Dio();
+ final Dio dio;
+
+ JsonPlaceholderService(this.dio);
 
 Future<List<TodoModel>> getTodos() async{
   final response = await dio.get(url);
